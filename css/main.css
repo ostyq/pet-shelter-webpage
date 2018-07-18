@@ -1,17 +1,18 @@
 body {
-  margin: 2px;
+  font-size: 16px;
+  /* margin: 0.125rem; */
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   /* overflow: visible; */
 }
 div.start-page {
-  height: 925px;
+  min-height: 925px;
   background: #2c241f url('../images/Background.png') no-repeat center top;
   /* linear-gradient(to left top, #1b1b1d, #4c3f37) */
   font-family: 'Arial';
-  font-size: 15px;
-  line-height: 19px;
+  font-size: 0.9375rem;
+  line-height: 1.188rem;
   color: #cdcdcd;
 }
 header.start-page-header {
@@ -19,21 +20,20 @@ header.start-page-header {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  position: relative;
-  top: 30px;
-  right: 100px;
+  margin-top: 0.8rem;
 }
-.start-page-menu-bar li {
+ul.start-page-menu-bar li {
   list-style-type: none;
   flex-direction: row;
+  justify-content: space-evenly;
 }
 .start-page-menu-bar li a {
   font-family: 'Arial';
-  font-size: 15px;
-  line-height: 19px;
+  font-size: 0.9375rem;
+  line-height: 1.188rem;
   color: #cdcdcd;
   display: block;
-  padding-bottom: 5px;
+  padding-bottom: 0.3125rem;
   text-decoration: none;
 }
 .start-page-menu-bar li a:hover {
@@ -42,46 +42,47 @@ header.start-page-header {
 }
 ul.start-page-menu-bar {
   display: flex;
-  flex-basis: 1;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  width: 530px;
+  min-width: 33.13rem;
+  margin-right: 4rem;
 }
 div.start-page-logo {
-  margin-top: 15px;
+  margin-top: 1rem;
   flex-basis: 2;
-  margin-left: 220px;
-  width: 300px;
+  margin-left: 7.5rem;
+  width: 18.75rem;
+  /* margin-right: 18rem; */
 }
 div.start-page-logo p {
-  font-size: 13px;
-  line-height: 20px;
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
   margin-top: 0;
-  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
 }
 
 div.start-page-logo h1.start-page-logo-name {
   font-family: 'Georgia'; /* rewrite text styles with PS */
-  font-size: 32px;
-  line-height: 40px;
+  font-size: 2.5rem;
+  line-height: 3rem;
   color: #f1cdb3;
   margin-bottom: 0;
-  margin-top: 10px;
+  margin-top: 0.625rem;
   font-weight: normal;
 }
 main.start-page-main {
   display: flex;
   flex-direction: column;
-  width: 670px;
-  margin-left: 120px;
-  margin-top: 15em;
+  width: 41.88rem;
+  margin-left: 7.5rem;
+  margin-top: 15rem;
 }
 button.standard {
   border-radius: 100px;
   border: 1px solid #bea28f;
   color: #292929;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 17px;
+  font-size: 1rem;
   letter-spacing: 1px;
   cursor: pointer;
 }
@@ -89,14 +90,14 @@ button.standard:focus {
   outline: none;
 }
 main.start-page-main button.standard {
-  width: 205px;
+  width: 12.81rem;
   height: 52px;
   background: #f1cdb3;
 }
 
 div.about-page-pets button {
-  width: 190px;
-  height: 50px;
+  width: 11.88rem;
+  height: 3.125rem; /* 50px */
   border: 2px solid #f1cdb3;
   background-color: inherit;
   cursor: pointer;
@@ -104,13 +105,12 @@ div.about-page-pets button {
 div.about-page-pets button:hover {
   background-color: #f1cdb3;
 }
-div.about-page-pets button.small {
+/* div.about-page-pets button.small {
   color: #292929;
-  font-size: 20px;
+  font-size: 1.25rem;
   height: 35px;
   width: 35px;
-  //
-}
+} */
 
 main.start-page-main button.standard:hover {
   background: #fddcc4;
@@ -118,18 +118,18 @@ main.start-page-main button.standard:hover {
 main.start-page-main p {
   width: 70%;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   color: #cdcdcd;
-  margin-bottom: 50px;
-  margin-top: 10px;
+  margin-bottom: 3.125rem;
+  margin-top: 0.625rem;
 }
 main.start-page-main h1 {
   width: 50%;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: 100;
-  font-size: 44px;
-  line-height: 57px;
+  font-size: 2.75rem;
+  line-height: 3.563rem;
   letter-spacing: 1.5px;
   color: #ffffff;
 }
@@ -139,12 +139,11 @@ section.about-page {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* overflow: visible; */
 }
 section.about-page h1 {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 35px;
-  line-height: 45px;
+  font-size: 2rem;
+  line-height: 2.8rem;
   font-weight: 100;
   letter-spacing: 1.5px;
   color: #545454;
@@ -155,21 +154,20 @@ div.about-page-info {
   flex-basis: 100%;
   min-height: 587px;
   display: flex;
-  /* flex-direction: row; */
   flex-wrap: wrap;
-  /* width: 60%; */
-  justify-content: center;
+  justify-content: space-evenly;
+  padding-top: 4rem;
 }
 
 div.about-page-info-img-holder {
   flex-basis: 20%;
   flex-shrink: 2;
+  margin-left: 4rem;
 }
 div.about-page-info img {
   max-width: 300px;
   max-height: 408px;
   height: auto;
-  margin: 5em 5em;
 }
 
 div.about-page-info-text {
@@ -177,18 +175,15 @@ div.about-page-info-text {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  /* margin-top: 5em;
-  margin-left: 5em; */
-  margin: 5em 5em;
 }
 
 div.about-page-info-text p {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   color: #4c4c4c;
   text-align: left;
-  width: 430px;
+  width: 26.88rem;
 }
 
 h1.about-page-header {
@@ -211,8 +206,8 @@ div.about-page-selector-pet-preview {
   justify-content: center;
   background-color: #fafafa;
   border-radius: 10px;
-  padding-bottom: 40px;
-  margin-bottom: 50px;
+  padding-bottom: 2.5rem;
+  margin-bottom: 3.125rem;
 }
 div.about-page-selector-pet-preview:hover {
   background-color: #fefefe;
@@ -225,8 +220,8 @@ div.about-page-selector-pet-preview:hover button {
 }
 
 div.about-page-selector-pet-preview h1 {
-  font-size: 20px;
-  line-height: 45px;
+  font-size: 1.5rem;
+  line-height: 2.8rem;
   letter-spacing: 1.5px;
 }
 div.about-page-selector-pet-preview img {
@@ -247,15 +242,15 @@ div.about-page-pets {
 
 div.about-page-pets h1.about-page-header {
   text-align: center;
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   flex-basis: 100%;
 }
 
 div.about-page-pets > button.big {
   align-self: center;
   width: 270px;
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
   background-color: #f4cdb2;
 }
 div.about-page-pets > button.big:hover {
@@ -275,11 +270,11 @@ section.help-page {
 
 h1.help-page-assistance-header {
   flex-basis: 100%;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 3.125rem;
+  margin-bottom: 3.125rem;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 35px;
-  line-height: 45px;
+  font-size: 2.2rem;
+  line-height: 2.8rem;
   font-weight: 100;
   letter-spacing: 1.5px;
   color: #545454;
@@ -290,24 +285,24 @@ div.help-page-assistance-options {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  margin: 0 8em;
+  margin: 0 8rem;
 }
 div.help-page-assistance-options-preview {
   flex-basis: 20%;
-  margin-bottom: 3em;
-  min-width: 172px;
+  margin-bottom: 3rem;
+  min-width: 10.75rem;
 }
 
 div.help-page-assistance-options-preview p {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
   font-weight: 100;
   letter-spacing: 1.5px;
   color: #545454;
 }
 section.help-page div.help-page-donations {
-  height: 435px;
+  /* height: 435px; */
   width: 100%;
   background-color: #f6f6f6;
   display: flex;
@@ -320,13 +315,13 @@ section.help-page div.help-page-donations-image-holder {
 section.help-page div.help-page-donations-image-holder img {
   max-width: 100%;
   height: auto;
-  margin: 4em auto;
+  margin: 4rem auto;
   min-width: 40%;
 }
 section.help-page div.help-page-donations-text {
   flex-basis: 45%;
   width: 400px;
-  margin-top: 3em;
+  margin-top: 3rem;
   text-align: start;
   color: #545454;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -334,16 +329,16 @@ section.help-page div.help-page-donations-text {
 }
 
 section.help-page div.help-page-donations-text h1 {
-  font-size: 35px;
-  line-height: 45px;
+  font-size: 2.2rem;
+  line-height: 2.8rem;
   letter-spacing: 2.5px;
   color: #545454;
   font-weight: 100;
 }
 section.help-page div.help-page-donations-text p {
-  font-size: 15px;
-  line-height: 20px;
-  max-width: 400px;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  max-width: 25rem;
   letter-spacing: 1px;
 }
 
@@ -353,47 +348,224 @@ section.help-page
   font-family: Arial, Helvetica, sans-serif;
   font-style: italic;
   color: #b2b2b2;
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
 }
 button.bank-number {
   height: 40px;
   border-radius: 10px;
   background-color: #f4cdb2;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 1.25rem;
+  line-height: 1.85rem;
   letter-spacing: 1.5px;
 }
 button.bank-number:hover {
   background-color: #fddcc4;
 }
 section.contacts {
-  max-height: 360px;
+  max-height: 22.5rem;
   /* background: linear-gradient(to left top, #1b1b1d, #4c3f37); */
   background: #2c241f url('../images/footer.png') no-repeat center top;
   display: flex;
 }
 
-div.contacts-field{
- flex-basis: 25%;
- margin-left: 4em;
- margin-top: 2em;
+div.contacts-field {
+  flex-basis: 25%;
+  margin-left: 4rem;
+  margin-top: 2rem;
 }
 section.contacts h1 {
-  font-size: 35px;
-  line-height: 45px;
+  font-size: 2.188rem;
+  line-height: 2.813rem;
   color: #ffffff;
   letter-spacing: 2px;
   font-weight: 100;
 }
 section.contacts p {
   font-family: 'Times New Roman', Times, serif;
-  font-size: 20px;
-  line-height: 25px;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
   color: #f1cdb3;
   font-weight: 100;
 }
 i {
-  margin-right: 0.75em;
+  margin-right: 0.75rem;
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+  section.contacts {
+    background: #2c241f url('../images/footer-1024px.png') no-repeat center top;
+  }
+  div.about-page-selector-pet-preview {
+    flex-basis: 40%;
+  }
+  div.help-page-assistance-options-preview {
+    flex-basis: 33%;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 11px;
+  }
+  main.start-page-main h1 {
+    font-size: 2.5rem;
+  }
+  main.start-page-main p {
+    width: 52%;
+  }
+  ul.start-page-menu-bar {
+    margin-left: 2rem;
+  }
+  div.start-page {
+    min-height: 720px;
+  }
+  section.help-page {
+    min-height: 900px;
+  }
+  section.contacts {
+    background: #2c241f url('../images/footer-768px.png') no-repeat center top;
+  }
+  div.start-page {
+    background: #2c241f url('../images/Background-768px.png') no-repeat center
+      top;
+  }
+  div.contacts-field {
+    margin-top: 4rem;
+  }
+  section.help-page {
+    min-height: 870px;
+  }
+
+  section.about-page h1 {
+    font-size: 2.5rem;
+  }
+  section.about-page p {
+    font-size: 1.1rem;
+  }
+  main.start-page-main button.standard {
+    height: 42px;
+  }
+}
+/* 
+@media screen and (max-width: 667px) and (orientation: landscape) {
+  div.start-page-logo,
+  main.start-page-main {
+    margin-left: 4rem;
+  }
+  ul.start-page-menu-bar {
+    margin-left: -1rem;
+  }
+}
+@media screen and (max-width: 736px) and (orientation: landscape) {
+  div.start-page-logo,
+  main.start-page-main {
+    margin-left: 4rem;
+  }
+}
+
+@media screen and (max-width: 812px) and (orientation: landscape) {
+  div.start-page-logo,
+  main.start-page-main {
+    margin-left: 4rem;
+  }
+  ul.start-page-menu-bar {
+    margin-left: -1rem;
+  }
+  main.start-page-main {
+    margin-top: 9rem;
+  }
+  div.start-page {
+    min-height: 700px;
+  }
+} */
+
+@media screen and (max-width: 414px) {
+  html {
+    font-size: 7px;
+  }
+  div.start-page,
+  section.contacts {
+    background: linear-gradient(to left top, #1b1b1d, #4c3f37);
+  }
+  div.contacts-field {
+    flex-basis: 50%;
+    margin-top: 2rem;
+  }
+  div.start-page {
+    min-height: 400px;
+  }
+  main.start-page-main {
+    margin-top: 8rem;
+  }
+  ul.start-page-menu-bar {
+    margin-left: -0.5rem;
+  }
+  div.about-page-info img {
+    max-width: 20rem;
+    max-height: 25rem;
+  }
+  div.about-page-info-img-holder {
+    margin-top: 3rem;
+  }
+  section.about-page p {
+    font-size: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  div.about-page-info {
+    min-height: 240px;
+  }
+  div.about-page-selector-pet-preview img {
+    max-width: 20rem;
+  }
+  section.about-page {
+    min-height: 308px;
+  }
+  div.about-page-pets {
+    min-height: 592px;
+  }
+  div.about-page-pets > button.big {
+    width: 20rem;
+  }
+  div.help-page-assistance-options-preview img {
+    max-width: 5rem;
+  }
+  div.help-page-assistance-options-preview p {
+    font-size: 1.2rem;
+  }
+  section.help-page {
+    min-height: 520px;
+  }
+  button.bank-number {
+    height: 28px;
+  }
+  section.help-page div.help-page-donations-text h1 {
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+    letter-spacing: 1px;
+  }
+  section.help-page div.help-page-donations-image-holder img {
+    margin: 8rem auto;
+  }
+  main.start-page-main h1 {
+    width: 100%;
+  }
+  main.start-page-main p {
+    width: 80%;
+  }
+  main.start-page-main button.standard {
+    height: 30px;
+  }
+  div.start-page {
+    min-height: 320px;
+  }
+  main.start-page-main {
+    margin-top: 5rem;
+  }
 }
