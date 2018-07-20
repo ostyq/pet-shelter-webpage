@@ -91,7 +91,7 @@ main.start-page-main button.standard {
 
 div.about-page-pets button {
   width: 75%;
-  height: 3.125rem; 
+  height: 3.125rem;
   border: 2px solid #f1cdb3;
   background-color: inherit;
   cursor: pointer;
@@ -384,6 +384,10 @@ section.contacts p {
 i {
   margin-right: 0.75rem;
 }
+section.contacts p a {
+  color: #f1cdb3;
+  text-decoration: none;
+}
 
 @media screen and (max-width: 1200px) {
   section.contacts {
@@ -576,3 +580,4 @@ i {
   main.start-page-main button.standard {
     margin-top: 0;
   }
+}
