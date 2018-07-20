@@ -384,7 +384,7 @@ section.contacts p {
 i {
   margin-right: 0.75rem;
 }
-section.contacts p a {
+section.contacts div.contacts-field p a {
   color: #f1cdb3;
   text-decoration: none;
 }
