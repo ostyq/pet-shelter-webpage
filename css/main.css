@@ -1,15 +1,11 @@
 body {
-  font-size: 16px;
-  /* margin: 0.125rem; */
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  /* overflow: visible; */
 }
 div.start-page {
   min-height: 925px;
   background: #2c241f url('../images/Background.png') no-repeat center top;
-  /* linear-gradient(to left top, #1b1b1d, #4c3f37) */
   font-family: 'Arial';
   font-size: 0.9375rem;
   line-height: 1.188rem;
@@ -44,15 +40,13 @@ ul.start-page-menu-bar {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  min-width: 33.13rem;
-  margin-right: 4rem;
+  width: 48%;
+  margin-right: 2rem;
 }
 div.start-page-logo {
   margin-top: 1rem;
-  flex-basis: 2;
   margin-left: 7.5rem;
-  width: 18.75rem;
-  /* margin-right: 18rem; */
+  width: 25%;
 }
 div.start-page-logo p {
   font-size: 0.8125rem;
@@ -62,7 +56,7 @@ div.start-page-logo p {
 }
 
 div.start-page-logo h1.start-page-logo-name {
-  font-family: 'Georgia'; /* rewrite text styles with PS */
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 2.5rem;
   line-height: 3rem;
   color: #f1cdb3;
@@ -73,7 +67,7 @@ div.start-page-logo h1.start-page-logo-name {
 main.start-page-main {
   display: flex;
   flex-direction: column;
-  width: 41.88rem;
+  width: 65%;
   margin-left: 7.5rem;
   margin-top: 15rem;
 }
@@ -96,8 +90,8 @@ main.start-page-main button.standard {
 }
 
 div.about-page-pets button {
-  width: 11.88rem;
-  height: 3.125rem; /* 50px */
+  width: 75%;
+  height: 3.125rem; 
   border: 2px solid #f1cdb3;
   background-color: inherit;
   cursor: pointer;
@@ -105,18 +99,12 @@ div.about-page-pets button {
 div.about-page-pets button:hover {
   background-color: #f1cdb3;
 }
-/* div.about-page-pets button.small {
-  color: #292929;
-  font-size: 1.25rem;
-  height: 35px;
-  width: 35px;
-} */
 
 main.start-page-main button.standard:hover {
   background: #fddcc4;
 }
 main.start-page-main p {
-  width: 70%;
+  width: 73%;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -125,7 +113,7 @@ main.start-page-main p {
   margin-top: 0.625rem;
 }
 main.start-page-main h1 {
-  width: 50%;
+  width: 55%;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: 100;
   font-size: 2.75rem;
@@ -135,7 +123,7 @@ main.start-page-main h1 {
 }
 section.about-page {
   background-color: #fafafa;
-  min-height: 1418px; /* check the size and display when smaller*/
+  min-height: 1418px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -152,26 +140,29 @@ section.about-page h1 {
 
 div.about-page-info {
   flex-basis: 100%;
-  min-height: 587px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding-top: 4rem;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
 }
 
 div.about-page-info-img-holder {
-  flex-basis: 20%;
-  flex-shrink: 2;
-  margin-left: 4rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-right: 2rem;
+  flex-basis: 30%;
 }
 div.about-page-info img {
-  max-width: 300px;
-  max-height: 408px;
+  max-width: 100%;
   height: auto;
+  margin: auto auto;
+  min-width: 14rem;
 }
 
 div.about-page-info-text {
-  flex-basis: 40%;
+  flex-basis: 55%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -183,7 +174,7 @@ div.about-page-info-text p {
   line-height: 1.5rem;
   color: #4c4c4c;
   text-align: left;
-  width: 26.88rem;
+  width: 100%;
 }
 
 h1.about-page-header {
@@ -207,7 +198,10 @@ div.about-page-selector-pet-preview {
   background-color: #fafafa;
   border-radius: 10px;
   padding-bottom: 2.5rem;
-  margin-bottom: 3.125rem;
+  margin-bottom: 2.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  max-width: 270px;
 }
 div.about-page-selector-pet-preview:hover {
   background-color: #fefefe;
@@ -227,7 +221,6 @@ div.about-page-selector-pet-preview h1 {
 div.about-page-selector-pet-preview img {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  /* padding-top: 20px; */
 }
 
 div.about-page-pets {
@@ -259,8 +252,6 @@ div.about-page-pets > button.big:hover {
 
 section.help-page {
   background-color: #fafafa;
-  min-height: 1050px;
-  /* box-sizing: border-box; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -285,12 +276,12 @@ div.help-page-assistance-options {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  margin: 0 8rem;
+  margin: 0 6rem;
 }
 div.help-page-assistance-options-preview {
   flex-basis: 20%;
   margin-bottom: 3rem;
-  min-width: 10.75rem;
+  min-width: 20%;
 }
 
 div.help-page-assistance-options-preview p {
@@ -302,26 +293,28 @@ div.help-page-assistance-options-preview p {
   color: #545454;
 }
 section.help-page div.help-page-donations {
-  /* height: 435px; */
   width: 100%;
   background-color: #f6f6f6;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 section.help-page div.help-page-donations-image-holder {
   flex-basis: 45%;
+  display: flex;
 }
 
 section.help-page div.help-page-donations-image-holder img {
   max-width: 100%;
   height: auto;
-  margin: 4rem auto;
+  margin: auto auto;
   min-width: 40%;
 }
 section.help-page div.help-page-donations-text {
   flex-basis: 45%;
-  width: 400px;
-  margin-top: 3rem;
+  width: 45%;
   text-align: start;
   color: #545454;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -338,7 +331,7 @@ section.help-page div.help-page-donations-text h1 {
 section.help-page div.help-page-donations-text p {
   font-size: 1rem;
   line-height: 1.25rem;
-  max-width: 25rem;
+  max-width: 70%;
   letter-spacing: 1px;
 }
 
@@ -365,26 +358,25 @@ button.bank-number:hover {
 }
 section.contacts {
   max-height: 22.5rem;
-  /* background: linear-gradient(to left top, #1b1b1d, #4c3f37); */
   background: #2c241f url('../images/footer.png') no-repeat center top;
   display: flex;
 }
 
 div.contacts-field {
-  flex-basis: 25%;
   margin-left: 4rem;
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 section.contacts h1 {
-  font-size: 2.188rem;
-  line-height: 2.813rem;
+  font-size: 2rem;
+  line-height: 2.8rem;
   color: #ffffff;
   letter-spacing: 2px;
   font-weight: 100;
 }
 section.contacts p {
   font-family: 'Times New Roman', Times, serif;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   line-height: 1.5rem;
   color: #f1cdb3;
   font-weight: 100;
@@ -393,179 +385,194 @@ i {
   margin-right: 0.75rem;
 }
 
-@media screen and (max-width: 1024px) {
-  html {
-    font-size: 14px;
-  }
+@media screen and (max-width: 1200px) {
   section.contacts {
     background: #2c241f url('../images/footer-1024px.png') no-repeat center top;
   }
-  div.about-page-selector-pet-preview {
-    flex-basis: 40%;
-  }
+}
+
+@media screen and (max-width: 1055px) {
   div.help-page-assistance-options-preview {
     flex-basis: 33%;
     margin-bottom: 1.5rem;
   }
+  div.start-page-logo,
+  main.start-page-main {
+    margin-left: 5rem;
+  }
+  div.help-page-assistance-options {
+    margin: 0 3rem;
+  }
+  section.help-page div.help-page-donations-text p {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1010px) {
+  div.contacts-field {
+    margin-left: 3rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  div.contacts-field {
+    margin-left: 5rem;
+    flex-basis: 50%;
+  }
+  section.contacts {
+    max-height: 300px;
+    background: #2c241f url('../images/footer-850px.png') no-repeat center top;
+  }
+  section.help-page div.help-page-donations-text h1 {
+    font-size: 2rem;
+  }
+  div.start-page-logo {
+    width: 90%;
+  }
+  div.start-page-logo h1::after {
+    content: '\2630';
+    color: #f1cdb3;
+    font-size: 2.5rem;
+    margin-left: 2.5rem;
+    position: absolute;
+    right: 3rem;
+  }
+  ul.start-page-menu-bar {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
-  html {
-    font-size: 11px;
-  }
-  main.start-page-main h1 {
-    font-size: 2.5rem;
-  }
-  main.start-page-main p {
-    width: 52%;
-  }
-  ul.start-page-menu-bar {
-    margin-left: 2rem;
-  }
-  div.start-page {
-    min-height: 720px;
-  }
-  section.help-page {
-    min-height: 900px;
-  }
-  section.contacts {
-    background: #2c241f url('../images/footer-768px.png') no-repeat center top;
-  }
   div.start-page {
     background: #2c241f url('../images/Background-768px.png') no-repeat center
       top;
   }
-  div.contacts-field {
-    margin-top: 4rem;
-  }
-  section.help-page {
-    min-height: 870px;
-  }
 
-  section.about-page h1 {
-    font-size: 2.5rem;
-  }
-  section.about-page p {
-    font-size: 1.1rem;
-  }
-  main.start-page-main button.standard {
-    height: 42px;
-  }
-}
-/* 
-@media screen and (max-width: 667px) and (orientation: landscape) {
-  div.start-page-logo,
-  main.start-page-main {
-    margin-left: 4rem;
-  }
-  ul.start-page-menu-bar {
-    margin-left: -1rem;
-  }
-}
-@media screen and (max-width: 736px) and (orientation: landscape) {
-  div.start-page-logo,
-  main.start-page-main {
-    margin-left: 4rem;
-  }
-}
-
-@media screen and (max-width: 812px) and (orientation: landscape) {
-  div.start-page-logo,
-  main.start-page-main {
-    margin-left: 4rem;
-  }
-  ul.start-page-menu-bar {
-    margin-left: -1rem;
-  }
-  main.start-page-main {
-    margin-top: 9rem;
-  }
-  div.start-page {
-    min-height: 700px;
-  }
-} */
-
-@media screen and (max-width: 414px) {
-  html {
-    font-size: 7px;
-  }
-  div.start-page,
-  section.contacts {
-    background: linear-gradient(to left top, #1b1b1d, #4c3f37);
-  }
-  div.contacts-field {
-    flex-basis: 50%;
-    margin-top: 2rem;
-  }
-  div.start-page {
-    min-height: 400px;
-  }
-  main.start-page-main {
-    margin-top: 8rem;
-  }
-  ul.start-page-menu-bar {
-    margin-left: -0.5rem;
-  }
-  div.about-page-info img {
-    max-width: 20rem;
-    max-height: 25rem;
-  }
-  div.about-page-info-img-holder {
-    margin-top: 3rem;
-  }
-  section.about-page p {
-    font-size: 1rem;
-    padding-right: 1rem;
-    padding-left: 1rem;
-  }
-  div.about-page-info {
-    min-height: 240px;
-  }
-  div.about-page-selector-pet-preview img {
-    max-width: 20rem;
-  }
-  section.about-page {
-    min-height: 308px;
-  }
-  div.about-page-pets {
-    min-height: 592px;
-  }
-  div.about-page-pets > button.big {
-    width: 20rem;
-  }
-  div.help-page-assistance-options-preview img {
-    max-width: 5rem;
-  }
-  div.help-page-assistance-options-preview p {
-    font-size: 1.2rem;
-  }
-  section.help-page {
-    min-height: 520px;
-  }
-  button.bank-number {
-    height: 28px;
-  }
   section.help-page div.help-page-donations-text h1 {
-    font-size: 2.2rem;
-    line-height: 2.8rem;
     letter-spacing: 1px;
   }
-  section.help-page div.help-page-donations-image-holder img {
-    margin: 8rem auto;
+  section.help-page div.help-page-donations-text p {
+    letter-spacing: 0.5px;
   }
-  main.start-page-main h1 {
-    width: 100%;
-  }
-  main.start-page-main p {
-    width: 80%;
-  }
-  main.start-page-main button.standard {
-    height: 30px;
-  }
-  div.start-page {
-    min-height: 320px;
-  }
+  div.start-page-logo,
   main.start-page-main {
-    margin-top: 5rem;
+    margin-left: 3rem;
+  }
+  ul.start-page-menu-bar {
+    margin-left: -1.8rem;
   }
 }
+
+@media screen and (max-width: 706px) {
+  div.start-page {
+    background: #2c241f url('../images/Background-wo\ dog.png') no-repeat center
+      top;
+  }
+  main.start-page-main {
+    width: 85%;
+    margin-top: 5rem;
+  }
+  div.start-page {
+    min-height: 736px;
+  }
+  main.start-page-main h1 {
+    width: 90%;
+  }
+  main.start-page-main p {
+    width: 90%;
+  }
+  div.about-page-selector-pet-preview img {
+    width: 100%;
+    height: auto;
+  }
+  div.about-page-selector-pet-preview {
+    max-width: 40%;
+  }
+  main.start-page-main button.standard {
+    margin-top: 1rem;
+  }
+  section.help-page div.help-page-donations-image-holder {
+    display: none;
+  }
+
+  section.help-page div.help-page-donations-text {
+    flex-basis: 85%;
+  }
+  div.contacts-field {
+    margin-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 633px) {
+  html {
+    font-size: 14px;
+  }
+  div.help-page-assistance-options-preview p {
+    letter-spacing: 0;
+  }
+  section.about-page h1 {
+    text-align: center;
+  }
+  div.about-page-info-text {
+    flex-basis: 90%;
+  }
+  div.about-page-info-img-holder {
+    margin-right: 0;
+  }
+  div.help-page-assistance-options {
+    margin: 0px 1rem;
+  }
+}
+
+@media screen and (max-width: 472px) {
+  div.about-page-selector-pet-preview {
+    max-width: 60%;
+  }
+  section.contacts h1 br {
+    display: none;
+  }
+  section.contacts {
+    max-height: 1300px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    letter-spacing: 0;
+  }
+  div.contacts-field {
+    flex-basis: 90%;
+    margin: 0;
+  }
+  div.contacts-field h1 {
+    letter-spacing: 0px;
+  }
+}
+@media screen and (max-width: 375px) {
+  div.start-page {
+    min-height: 667px;
+  }
+  div.help-page-assistance-options-preview {
+    flex-basis: 50%;
+  }
+}
+
+@media screen and (max-width: 331px) {
+  main.start-page-main {
+    margin-top: 2rem;
+  }
+  section.about-page h1 {
+    letter-spacing: 1px;
+  }
+  div.about-page-pets button {
+    width: 80%;
+  }
+  button.bank-number,
+  section.help-page div.help-page-donations-text h1 {
+    letter-spacing: 0.5px;
+  }
+  div.contacts-field h1 {
+    letter-spacing: 2px;
+  }
+  main.start-page-main button.standard {
+    margin-top: 0;
+  }
