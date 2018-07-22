@@ -45,7 +45,7 @@ ul.start-page-menu-bar {
 }
 div.start-page-logo {
   margin-top: 1rem;
-  margin-left: 7.5rem;
+  margin-left: 5rem;
   width: 25%;
 }
 div.start-page-logo p {
@@ -68,7 +68,7 @@ main.start-page-main {
   display: flex;
   flex-direction: column;
   width: 65%;
-  margin-left: 7.5rem;
+  margin-left: 5rem;
   margin-top: 15rem;
 }
 button.standard {
